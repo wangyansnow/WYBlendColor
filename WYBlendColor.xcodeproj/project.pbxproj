@@ -13,6 +13,7 @@
 		73EEB6431D002A8800D61BF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73EEB6411D002A8800D61BF7 /* Main.storyboard */; };
 		73EEB6451D002A8800D61BF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73EEB6441D002A8800D61BF7 /* Assets.xcassets */; };
 		73EEB6481D002A8800D61BF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73EEB6461D002A8800D61BF7 /* LaunchScreen.storyboard */; };
+		73EEB6511D002AA100D61BF7 /* WYColorLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 73EEB6501D002AA100D61BF7 /* WYColorLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		73EEB6441D002A8800D61BF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73EEB6471D002A8800D61BF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73EEB6491D002A8800D61BF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73EEB64F1D002AA100D61BF7 /* WYColorLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WYColorLabel.h; sourceTree = "<group>"; };
+		73EEB6501D002AA100D61BF7 /* WYColorLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WYColorLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		73EEB6371D002A8800D61BF7 /* WYBlendColor */ = {
 			isa = PBXGroup;
 			children = (
+				73EEB64F1D002AA100D61BF7 /* WYColorLabel.h */,
+				73EEB6501D002AA100D61BF7 /* WYColorLabel.m */,
 				73EEB63B1D002A8800D61BF7 /* AppDelegate.h */,
 				73EEB63C1D002A8800D61BF7 /* AppDelegate.m */,
 				73EEB63E1D002A8800D61BF7 /* ViewController.h */,
@@ -149,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73EEB6511D002AA100D61BF7 /* WYColorLabel.m in Sources */,
 				73EEB6401D002A8800D61BF7 /* ViewController.m in Sources */,
 				73EEB63D1D002A8800D61BF7 /* AppDelegate.m in Sources */,
 				73EEB63A1D002A8800D61BF7 /* main.m in Sources */,
