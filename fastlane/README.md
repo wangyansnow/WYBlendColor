@@ -27,12 +27,13 @@ xcode-select --install
 <td width="33%"><code>sudo gem install fastlane -NV</code></td>
 </tr>
 </table>
+
 # Available Actions
-### ManagerPodLib
+### gitCode
 ```
-fastlane ManagerPodLib
+fastlane gitCode
 ```
-快速的升级维护pod私有库
+快速代码提交
 
 ----
 
