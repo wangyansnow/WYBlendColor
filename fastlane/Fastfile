@@ -6,7 +6,7 @@
 desc “快速代码提交”
 lane :gitCode do |options|
 
-targetName = options[:targetName]
+commit = options[:commit]
 tagName = options[:tagName]
 
 
@@ -15,7 +15,7 @@ tagName = options[:tagName]
 #   1. git add .
 git_add(path: ".")
 #   2. git commit -m "xx"
-git_commit(path: ".", message: "升级版本")
+git_commit(path: ".", message: commit)
 #   3. git push origin master
 #push_to_git_remote
 
