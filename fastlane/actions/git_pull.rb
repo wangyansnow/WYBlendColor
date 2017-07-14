@@ -7,7 +7,7 @@ module Fastlane
     class GitPullAction < Action
       def self.run(params)
       
-      # 1.取出, 传递过来的三个参数
+      # 1.取出传递过来的参数
       repo = params[:repo] # 仓库名称 默认gitlab
       branchName = params[:branchName] # 分支名称 默认develop
   

@@ -1,44 +1,37 @@
 module Fastlane
   module Actions
     module SharedValues
-      GIT_PUSH_CUSTOM_VALUE = :GIT_PUSH_CUSTOM_VALUE
+      GIT_MERGE_CUSTOM_VALUE = :GIT_MERGE_CUSTOM_VALUE
     end
 
-    class GitPushAction < Action
+    class GitMergeAction < Action
       def self.run(params)
       
       # 1.取出传递过来的参数
-      repo = params[:repo] # 仓库名称 默认gitlab
       branchName = params[:branchName] # 分支名称 默认develop
   
-      UI.message("正在推送#{branchName}分支到#{repo} 🎯.")
+      UI.message("正在合并#{branchName}分支 🎯.")
       
       # 2. 执行命令
-      resultCmd = "git push #{repo} #{branchName}"
+      resultCmd = "git merge #{branchName}"
       Actions.sh(resultCmd)
       
       end
 
 # action 描述
       def self.description
-        "推送代码到远程仓库"
+        "合并分支"
       end
   # action 具体描述
       def self.details
-        "git_push(repo:gitlab, branchName:develop) git_push(branchName:develop) 推送代码到远程仓库"
+        "git_merge(branchName:develop) git_merge() 合并分支"
       end
 # 参数
       def self.available_options
 
         [
-          FastlaneCore::ConfigItem.new(key: :repo,
-                                       description:"要推送的远程仓库名称",
-                                       is_string:true,
-                                       optional:true,
-                                       default_value: "gitlab"
-                                       ),
             FastlaneCore::ConfigItem.new(key: :branchName,
-                                         description:"要推送的分支名称",
+                                         description:"要合并的分支名称",
                                          is_string:true,
                                          optional:true,
                                          default_value:"develop"
