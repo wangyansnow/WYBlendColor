@@ -7,7 +7,6 @@ desc "快速代码合并提交"
 lane :gitCode do |options|
 
 commit = options[:c]
-tagName = options[:tagName]
 
 # 这里面, 只能写已有action
 
