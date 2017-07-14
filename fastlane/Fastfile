@@ -1,0 +1,23 @@
+
+# 定义很多个航道
+# 一个航道: 快速代码提交
+
+# 描述航道是做什么用的
+desc "快速代码合并提交"
+lane :gitCode do |options|
+
+commit = options[:commit]
+tagName = options[:tagName]
+
+# 这里面, 只能写已有action
+
+# 3. 提交代码到远程代码仓库
+#   1. git add .
+git_add(path: ".")
+#   2. git commit -m "xx"
+git_commit(path: ".", message: commit)
+#   3. git push origin master
+#push_to_git_remote
+
+
+end
