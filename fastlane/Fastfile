@@ -6,19 +6,29 @@
 desc "快速代码合并提交"
 lane :gitCode do |options|
 
-commit = options[:commit]
+commit = options[:c]
 tagName = options[:tagName]
 
 # 这里面, 只能写已有action
 
-# 3. 提交代码到远程代码仓库
-#   1. git add .
+# 提交代码到远程代码仓库
 git_add(path: ".")
-#   2. git commit -m "xx"
 git_commit(path: ".", message: commit)
-#   3. git pull origin master
+
+git_checkout(repo: "origin", branchName: "master")
 git_pull(repo: "origin", branchName: "master")
-#   4. git push origin master
+git_checkout(repo: "origin", branchName: "develop")
+git_rebase(branchName: "master")
+
+git_pull(repo: "origin", branchName: "develop")
 git_push(repo: "origin", branchName: "master")
+
+git_checkout(repo: "origin", branchName: "master")
+git_merge(branchName: "develop")
+
+git_pull(repo: "origin", branchName: "master")
+git_push(repo: "origin", branchName: "master")
+
+git_checkout(repo: "origin", branchName: "develop")
 
 end
