@@ -20,5 +20,6 @@ fir_build/
 AdHocExportOptions.plist
 桌面图标/
 wyBuild/
+fastlane/report.xml
 
 WangliBank.zip
