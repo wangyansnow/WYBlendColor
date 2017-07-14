@@ -15,20 +15,20 @@ tagName = options[:tagName]
 git_add(path: ".")
 git_commit(path: ".", message: commit)
 
-git_checkout(repo: "origin", branchName: "master")
+git_checkout(branchName: "master")
 git_pull(repo: "origin", branchName: "master")
-git_checkout(repo: "origin", branchName: "develop")
+git_checkout(branchName: "develop")
 git_rebase(branchName: "master")
 
 git_pull(repo: "origin", branchName: "develop")
 git_push(repo: "origin", branchName: "master")
 
-git_checkout(repo: "origin", branchName: "master")
+git_checkout(branchName: "master")
 git_merge(branchName: "develop")
 
 git_pull(repo: "origin", branchName: "master")
 git_push(repo: "origin", branchName: "master")
 
-git_checkout(repo: "origin", branchName: "develop")
+git_checkout(branchName: "develop")
 
 end
