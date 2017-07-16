@@ -33,7 +33,6 @@ xcode-select --install
 ```
 fastlane gitCode
 ```
-快速代码提交
 
 ----
 
