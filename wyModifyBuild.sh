@@ -6,7 +6,7 @@ build_path=$(cd "$(dirname "${BASH_SOURCE-$0}")"; pwd)
 echo "工程目录：${build_path}................."
 cd ${build_path}
 
-scheme_name="WYCountingLabel"
+scheme_name="WYBlendColor"
 infoplis_path=${build_path}/${scheme_name}/Info.plist
 
 # 1.拉取最新代码
