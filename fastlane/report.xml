@@ -5,12 +5,21 @@
     
     
       
+<<<<<<< HEAD
       <testcase classname="fastlane.lanes" name="00: git_add" time="0.017426">
         
       </testcase>
     
       
       <testcase classname="fastlane.lanes" name="01: git_commit" time="0.023768">
+=======
+
+      <testcase classname="fastlane.lanes" name="00: git_add" time="0.010774">
+        
+      </testcase>
+
+      <testcase classname="fastlane.lanes" name="01: git_commit" time="0.020882">
+>>>>>>> 6dae20a76939c32e226e965bc7a729d542ee93a1
         
       </testcase>
     
