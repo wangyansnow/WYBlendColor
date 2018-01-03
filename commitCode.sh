@@ -6,6 +6,10 @@
 # 请输入此次更新内容
 read -p "请输入此次代码提交更新内容：" commit
 
+read -p "请输入当前分支名称：" branchName
+
+echo "分支名称：${branchName}"
+
 #获取当前脚本所在路径
 build_path=$(cd "$(dirname "${BASH_SOURCE-$0}")"; pwd)
 echo "工程目录：${build_path}................."
