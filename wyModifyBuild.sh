@@ -37,7 +37,7 @@ oldBundleId=$(/usr/libexec/PlistBuddy -c "print CFBundleIdentifier" ${infoplis_p
 echo "恢复后的bundleIdentifier = ${oldBundleId}"
 
 # 6.提交对版本号的修改
-git add .
+git add ${infoplis_path}
 git commit -m "王俨test${build}"
 git push origin master
 
